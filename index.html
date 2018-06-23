@@ -1,25 +1,82 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-   <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.css">
     <meta charset="UTF-8">
+    <script src="https://use.fontawesome.com/a4ab12e57d.js"></script>
+    <script src="https://code.jquery.com/jquery-3.1.0.min.js"></script>
+    <script></script>
     <title></title>
 </head>
-<body>
- <div class="main-visual">
- <img src="asusyabeaikon.png" alt="">
-<!--
- <video autoplay loop poster="スクリーンショット 2018-05-26 19.49.53">
-    <source src="asusyabe.mp4" type="video/mp4">
-  </video>
--->
 
-  <div class="box">
-  </div>
-  <div class="box">
-  </div>
-  
-  
-  </div>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <ul>
+
+                    <li><a href="/index.html"><i class="fa fa-home" aria-hidden="true"></i>Top</a></li>
+                    <li><a href="./index.azingu.html"><span class="fish1"></span><span class="fish1"><i class="fa fa-tag"></i><i class="fa fa-chevron-left"></i></span>Twitter</a></li>
+                    <li><a href="https://www.google.co.jp/"><i class="fa fa-google-plus-official" aria-hidden="true"></i>Google</a></li>
+                    <li><a href="https://ja-jp.facebook.com/"><i class="fa fa-facebook-square" aria-hidden="true"></i>FaceBook</a></li>
+                </ul>
+            </nav>
+            <div class="hero">
+                <!--
+                <video class="video" src="asusyabe.mp4" autoplay loop />
+                <img src="asusyabeaikon.png" alt="Placeholder">
+-->
+                <video poster="asusyabeaikon.png" autoplay muted loop class="video">
+                    <source src="asusyabe.mp4" type="video/mp4" />
+                </video>
+            </div>
+        </div>
+    </div>
+    </div>
+    <div class="content-wrapper">
+        <!--<div id="he">
+        <div class="container">
+            <div><i class="fa fa-home" aria-hidden="true"></i>Top</div>
+        </div>
+    </div>!-->
+        <div class="box__area">
+            <div class="box box__bg_photo">
+                <h1>例えば</h1>
+                <h2>ボウリングの元はピンが十本じゃなかった！？</h2>
+                <p>元々はキリスト教の行事で『ピンを全て倒せば悪霊を追い払えるぞ』的なノリだったのですがそれが十九世紀になると賭博に使われるようになり1841年ごろにはナインピン禁止法が発令してしまいましたですがドイツのマルティン・ルターが『九本がダメなら十本ならいんじゃね』ってノリでボウリングが生まれました</p>
+                <p>こんな感じでまとめてますぜひこれを見て話のきっかけを作ってください！</p>
+            </div>
+            <div class="box">
+                <div class="uneCircle">
+                    <img class="gazou" src="pc.png" alt="">
+
+                </div>
+            </div>
+            <div class="box">
+                <p>aaa</p>
+                <p>bbb</p>
+            </div>
+        </div>
+    </div>
+    <script>
+        $(document).ready(function() {
+            $(window).on('scroll', function() {
+                if ($(window).scrollTop() < 1000) {
+                    $('.hero').css('background-size', 130 + parseInt($(window).scrollTop() / 5) + '%');
+                    $('.hero h1').css('top', 50 + ($(window).scrollTop() * .1) + '%');
+                    $('.hero h1').css('opacity', 1 - ($(window).scrollTop() * .003));
+                }
+
+                if ($(window).scrollTop() >= $('.content-wrapper').offset().top - 300) {
+                    $('.nav-bg').removeClass('bg-hidden');
+                    $('.nav-bg').addClass('bg-visible');
+                } else {
+                    $('.nav-bg').removeClass('bg-visible');
+                    $('.nav-bg').addClass('bg-hidden');
+                }
+            });
+        });
+    </script>
 </body>
 </html>

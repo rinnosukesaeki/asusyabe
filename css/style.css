@@ -1,10 +1,225 @@
-img{
-   width: 300px;
-    height: 200px;
+.uneCircle {
+    border: 5px solid #87CCA1;
+    animation: uneune 5s linear infinite;
+    /* 5秒アニメーションをループ */
+    width: 100px;
+    height: 140px;
+    margin: 50px auto;
+    background-color: #87CCA1
+}
+
+.container {
+    width: 1000px;
+    margin: 0px auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.video {
+    width: 100%;
+    height: 550px;
+}
+
+
+
+.rogo {
+    width: 280px;
+    height: 180px;
+}
+
+#header {
+    background-color: black;
+
+}
+
+/*#he{
+    width: 100%;
+    overflow: hidden;
+    background: #00008B;
+    padding: 10px 0px;
+    margin: 60px 0px;
+    /*    つけたし*/
+
+/* position: fixed;
+    z-index: 2;
+    /*    つけたし*/
+
+/*color: white;
+        
+}*/
+
+.box {
+    width: 100vw;
+    height: 100vh;
+}
+
+@media screen and (max-width: 320px) and (max-width: 480px) {
+    .box {
+        width: 320px;
+        height: 480px;
+    }
+}
+
+.box {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+}
+
+.box__bg_photo {
+    background-image: /*url(http://jsrun.it/assets/Q/s/j/P/QsjPn);*/
+    background-size: cover;
+    background-position: center;
+}
+
+@keyframes uneune {
+
+    0% {
+        border-radius: 60% 50% 70% 80% / 50% 60% 50% 70%;
+    }
+
+    25% {
+        border-radius: 70% 60% 60% 90% / 70% 80% 40% 90%;
+    }
+
+    50% {
+        border-radius: 60% 40% 70% 60% / 40% 60% 50% 60%;
+    }
+
+    75% {
+        border-radius: 90% 60% 40% 70% / 70% 50% 80% 40%;
+    }
+
+    100% {
+        border-radius: 60% 50% 70% 80% / 50% 60% 50% 70%;
+    }
+}
+
+.gazou {
+    width: 100px;
+    height: 120px;
+    margin 5opx;
+    padding: inherit
+}
+
+/*body {
+  padding: 50px;
+  position: relative;
+  background: #ffd;
+}*/
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    position: fixed;
+    z-index: 9999;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 35px;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: .2em 2em;
+    float: right;
+    color: deepskyblue;
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 0;
+    padding: .2em .7em;
+}
+
+nav a {
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+    font-family: Ubuntu;
+    font-size: 1.15em;
+    font-weight: lighter;
+    letter-spacing: 1px;
+    transition: .25s ease-in-out;
+}
+
+nav a:hover {
+    color: rgb(220, 120, 0);
+}
+
+.nav-bg {
+    content: '';
     position: absolute;
-    top: -50px;
-    bottom: -50px;
-    right: -50px;
-    left: -50px;
+    display: block;
+    top: -100%;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background: rgb(50, 50, 50);
+    transition: .45s ease-in-out;
+}
+
+.bg-hidden {
+    top: -100%;
+    opacity: 0;
+}
+
+.bg-visible {
+    top: 0;
+    opacity: 1;
+}
+
+h1 {
+    text-align: center;
+    font-family: Ubuntu;
+    letter-spacing: 1px;
+}
+
+.hero {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background: rgb(50, 50, 50);
+    background-size: 130%;
+    overflow: hidden;
+}
+
+.hero h1 {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 100%;
+    padding: .3em;
+    font-size: 3em;
+    font-weight: lighter;
+    color: aqua;
+}
+
+.content-wrapper {
+    width: 80%;
+    height: 3000px;
+    padding: 1em 10%;
+}
+
+.content-wrapper h1 {
+    margin: 0;
+    color: rgb(220, 120, 0);
+}
+
+.content-wrapper p {
+    font-family: "Open Sans";
+    text-indent: 1.5em;
+}
+
+content-wrapper {
     margin: auto;
+}
+
+box box__bg_photo {
+    background-color: cornsilk
 }
