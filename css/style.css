@@ -8,6 +8,8 @@
     background-color: #87CCA1
 }
 
+
+
 .container {
     width: 1000px;
     margin: 0px auto;
@@ -17,7 +19,7 @@
 
 .video {
     width: 100%;
-    height: 550px;
+    height: 700px;
 }
 
 
@@ -28,7 +30,8 @@
 }
 
 #header {
-    background-color: black;
+    background-image: url(../heddahaikei.png);
+
 
 }
 
@@ -114,27 +117,41 @@ body {
     padding: 0;
 }
 
+.aikon {
+    position: fixed;
+    width: 65px;
+    height: 65px;
+    padding: .2em 2em;
+    margin: 1px;
+    float: left
+}
+
+
 nav {
     position: fixed;
     z-index: 9999;
     top: 0;
     left: 0;
     width: 100%;
-    height: 35px;
+    font-size: 22px;
+    background-image: url(../heddahaikei.png);
+
 }
 
 nav ul {
     list-style: none;
-    margin: 0;
+    margin: 6px;
+    margin-right: auto;
     padding: .2em 2em;
     float: right;
-    color: deepskyblue;
+    color: antiquewhite;
 }
 
 nav ul li {
     display: inline-block;
     margin: 0;
     padding: .2em .7em;
+
 }
 
 nav a {
@@ -146,6 +163,7 @@ nav a {
     font-weight: lighter;
     letter-spacing: 1px;
     transition: .25s ease-in-out;
+    color: antiquewhite
 }
 
 nav a:hover {
@@ -182,8 +200,8 @@ h1 {
 
 .hero {
     position: relative;
-    width: 100%;
-    height: 100%;
+    width: 1280px;
+    height: 750px;
     background: rgb(50, 50, 50);
     background-size: 130%;
     overflow: hidden;
